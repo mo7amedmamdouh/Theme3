@@ -1,0 +1,471 @@
+/* Start Global */
+.container {
+    width: 1200px;
+    margin: auto;
+    min-width: 1200px;
+}
+* {
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+
+}
+
+ul{
+    
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navBar , .header , .service , .ourTeam , .testim , ourProjects , .footer {
+    min-width: 1200px;
+}
+/* End Global */
+/* --------------------------------------------------------------------------------------------------------- */
+
+/* Start Nav Baar */
+.navBar {
+    font-size: 18px; 
+    height: 0;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+}
+
+.navBar .brand {
+    float: left;
+    width: 50%;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+.navBar .brand span {
+    color:#1abc9c;
+}
+
+.navBar .links {
+    float: left;
+    width: 50%;
+    margin-top: 15px;
+    
+}
+
+.navBar .links ul li {
+    display: inline-block;
+    padding: 10px 0px;
+    margin: 0 10px;
+    text-transform: none;
+    border-bottom: 2px solid transparent;
+
+}
+.navBar .links ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+.navBar .links ul li.active a ,.navBar .links ul li a:hover {
+    color:#1abc9c;
+            border-bottom: 2px solid #1abc9c;
+    padding-bottom:10px;
+
+
+}
+.navBar .links ul li.active ,.navBar .links ul li:hover {
+
+}
+
+/* End Nav Baar */
+
+/* --------------------------------------------------------------------------------------------------------- */
+
+/* Start Header */
+
+.header {
+    background: url('../Images/Header.jpg');
+    position: relative;
+}
+.header .overLay {
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    z-index: 1;
+}
+.header .bx-wrapper{
+    height: 100%;
+}
+.header .bx-wrapper .bx-viewport {
+    
+    box-shadow: none;
+    border: 0;
+    background: none;
+    height: 100% !important;
+    text-align: center;
+}
+
+.header .bxslider{
+    height: 100%;
+}
+.header .bxslider li {
+        display: block;
+}
+.header .bxslider li h2 {
+    font-size: 60px;
+    margin-bottom: 24px;
+    margin-top: 0;
+}
+.header .bxslider li h2 span {
+    color :#1abc9c;
+}
+.header .bxslider li p {
+}
+
+/* end Header */ 
+
+/* --------------------------------------------------------------------------------------------------------- */
+
+/* Start Service */ 
+
+.service {
+    padding: 80px 20px 0 20px;
+}
+.service h2 {
+    margin: 0 0 50px;
+    font-weight: normal;
+    color: #585353;
+}
+
+.service .items{
+    width: 33.333333%;
+        float: left;
+    margin-bottom: 30px;
+    
+}
+.service .items i {
+    color:#1abc9c;
+    float: left;
+    width: 17%;
+    margin-right: 8%;
+    margin-top: 14px;
+}
+.service .items .info {
+    float: left;
+    width: 70%;
+}
+.service .items .info h3 {
+    font-weight: normal;
+    color:#585353;
+    margin-bottom: 13px;
+}
+
+.service .items .info p{
+    margin-top: 0;
+    color: #888;
+    line-height: 1.7;
+    
+}
+
+.ourTeam{
+    padding: 40px 20px;
+        
+}
+
+.ourTeam .box {
+    float: left;
+}
+.ourTeam .box:first-child {
+    width: 35%;
+}
+.ourTeam .box:first-child {
+    color:#888;
+    line-height: 1.5;
+    
+}
+.ourTeam .box:not(:first-child) {
+
+    width: 15.25%;
+    margin-left: 1%;
+    position: relative;
+        transition: all 1s ease-in-out;
+
+}
+.ourTeam .box:not(:first-child) .overLay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26 , 188 , 156, .6);
+    line-height: 183px;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    display: none;
+        transition: all 1s ease-in-out;
+
+}
+.ourTeam .box:not(:first-child):hover .overLay {
+    display: block;
+}
+
+.ourTeam .box:not(:first-child) img  {
+    width: 100%;
+    
+}
+.ourTeam h2{
+    font-weight: normal;
+    margin-top: 0;
+}
+/* End Service */
+
+
+/* --------------------------------------------------------------------------------------------------------- */
+
+
+/* Start Testimonials */ 
+.testim{
+    
+    background-image: url(../Images/Header.jpg);
+    height: 400px;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    position: relative;
+    text-align: center;
+    color: #ECE1E1;
+    padding: 40px 0;
+}
+
+.testim h2 {
+    font-size: 40px;
+    margin: 60px 0 20px 0;
+    }
+
+.testim q {
+    
+    font-size: 20px;
+    line-height: 2;
+}
+.testim p { 
+    font-size: 30px;
+    color: #1abc9c;
+}
+.testim .toverLay
+{
+    
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    background-color: rgba(255,255,255,.2);
+}
+
+.testim .slider >div {
+    display: none;
+}
+.testim .slider .active {
+    display: block;
+}
+/* End Testimonials */
+
+/* --------------------------------------------------------------------------------------------------------- */
+
+/* Start Projects */
+.ourProjects {
+    padding: 60px 0;    
+}
+
+.ourProjects h2 {
+    font-weight: normal;
+    
+}
+
+.ourProjects ul {
+    margin-top: 50px;
+}
+.ourProjects ul li{
+    display: inline-block;
+    border: 1px solid #d4cccc;
+    padding: 15px;
+    margin-right: 5px;
+    border-radius: 5px;
+    color: #aaa;
+}
+.ourProjects ul li.selected {
+color: #fff;
+    background-color:#1abc9c;  
+        border: 1px solid #1abc9c;
+
+}
+.ourProjects .gallery{
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+.ourProjects .gallery .row div:nth-child(2){
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+.ourProjects .gallery .row > div
+{
+    width: 32.66669%;
+    float: left;
+    margin-bottom: 12px;
+
+    position: relative;
+}
+.ourProjects .gallery .row > div .over {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26 , 188 , 156, .6);
+    line-height: 232px;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 1s ease-in-out;
+    display: none;
+
+}
+.ourProjects .gallery .row > div .heart {
+    
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #fff;
+    display: none;
+    
+}
+.ourProjects .gallery .row > div:hover .over,.ourProjects .gallery .row > div:hover .heart
+{
+    display: block;
+}
+
+ .gallery .row > div img {
+    width: 100%;
+}
+
+.ourProjects .shuffle {
+    cursor: pointer;
+}
+.ourProjects .mix{
+	display: none;
+}
+/* End Projects */ 
+/* --------------------------------------------------------------------------------------------------------- */
+/* Start Footer */ 
+.footer {
+    background-color: #232323;
+    color:#6c6c6c;
+    overflow: hidden;
+}
+.footer .col {
+    
+    width: 25%;
+    float: left;
+}
+
+.footer .col h2 {
+    color:#ffffff;
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: 40px;
+}
+.footer .col p {
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
+
+.footer .col i {
+    display: inline-block;
+    color: #9c9c9c;
+    padding: 10px;
+    border: 1px solid #6c6c6c;
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+
+.footer .tags span {
+        display: inline-block;
+    color: #9c9c9c;
+    padding: 10px;
+    border: 1px solid #6c6c6c;
+    margin-bottom: 10px;
+    padding: 10px;
+    margin-right: 7px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.footer .recent div{
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.footer .recent div h4{
+    
+    margin: 5px 0 5px 0;
+    color:#9c9c9c;
+    font-weight: normal;
+}
+
+.footer .recent div img{
+   float: left;
+    margin-right: 10px;
+    
+}
+
+
+.footer .blog ul li{
+   padding: 15px;
+    border-bottom: 1px solid #6c6c6c;
+    color:#9c9c9c;
+}
+.footer .copyRight {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+/* End Footer */ 
+
+
+/* Start Frame Work */
+
+.clearFix {
+    clear: both;
+}
+.specialHeading {
+    position: relative;
+}
+.specialHeading:after {
+    content:"";
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    width: 50px;
+    border-bottom: 2px solid #585353;
+    
+}
+.separetor{
+    border: 1px solid #eee;
+    margin: 40px 0;
+}
+/* End Frame Work */
